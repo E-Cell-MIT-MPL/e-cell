@@ -24,7 +24,6 @@ const Mes = () => {
       <Events />
       <Speakers />
     <Timeline />
-
       <Footer />
 
     </div>
