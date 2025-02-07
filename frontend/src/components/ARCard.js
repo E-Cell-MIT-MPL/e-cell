@@ -14,7 +14,7 @@ const ARCard = () => {
                     rel="noopener noreferrer"
                     className="inline-block bg-gradient-to-r from-[#22d3ee] to-purple-500 text-white font-bold py-3 px-8 rounded-full hover:shadow-lg"
                 >
-                    🚀 Unlock Your AR Experience
+                    🚀 Unlock AR Experience
                 </a>
             </div>
         </div>
