@@ -9,7 +9,8 @@ import sp6 from "./ICICI_Bank_Logo.png";
 import sp7 from "./Screenshot 2025-01-29 at 11.29.47 PM.png";
 import sp8 from "./Fashion Herald Logo.png";
 import sp9 from "./Yourstory logo (2).png";
-const sponsors = [sp1, sp2, sp3, sp4, sp9, sp5, sp6, sp7, sp8]; // List of all sponsor logos
+import sp10 from "../assets/images/SponsorSwiggyInstamartLogo.png";
+const sponsors = [sp1, sp2, sp3, sp4, sp9, sp5, sp10, sp6, sp7, sp8]; // List of all sponsor logos
 
 function Hero() {
   return (
