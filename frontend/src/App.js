@@ -6,6 +6,7 @@ import AboutUs from './pages/AboutUs';
 import Initiatives from "./pages/Initiatives";
 import Mes from './pages/mes';
 import BlogPage from "./pages/BlogPage";
+import ThankYou from "./pages/ThankYou";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/Initiatives" element={<Initiatives />}></Route>
           <Route path="/Home" element={<HomePage />}></Route>
           <Route path="/blog" element={<BlogPage />}></Route>
+          <Route path="/ThankYou" element={<ThankYou />}></Route>
         </Routes>
       </Router>
     </div>
