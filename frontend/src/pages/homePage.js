@@ -40,13 +40,12 @@ const HomePage = () => {
 
     return (
         <div>
-           <Meta name="description" content="E-Cell MIT Manipal fosters entrepreneurship by supporting startups, mentoring aspiring entrepreneurs, and building a strong entrepreneurial ecosystem."/><Meta name="keywords" content="E-Cell MIT Manipal, Entrepreneurship, Startups, Innovation, MIT Manipal, Business Ideas, Mentorship, Networking"/>
-<Meta name="author" content="E-Cell MIT Manipal"/>
- <Meta title='Home | E-Cell | Official Entrepreneurship club of MIT Manipal' />
-            
-            
+            <Meta
+                title='Home | E-Cell | Official Entrepreneurship club of MIT Manipal'
+                description='E-Cell MIT Manipal fosters entrepreneurship by supporting startups, mentoring aspiring entrepreneurs, and building a strong entrepreneurial ecosystem.'
+            />
             <Navbar />
-            
+
             <div className="min-h-screen bg-img src={bg} text-white overflow-hidden">
                 <main>
                     {/* Hero Section */}
@@ -85,7 +84,7 @@ const HomePage = () => {
                                         target="_blank"
                                         className="bg-blue-mid hover:bg-blue-mid/80 text-white px-8 py-4 text-lg rounded-full transition-colors duration-200 ease-out"
                                     >
-                                      MES 2025
+                                        MES 2025
                                     </Link>
                                 </div>
                             </div>
