@@ -18,7 +18,7 @@ const Mes = () => {
   return (<>
     <Meta
       title="MES | E-Cell"
-      description="Manipal Entrepreneurship Summit. The flagship event of MAHE organized by E-Cell MIT Manipal."
+      description="Join the Manipal Entrepreneurship Summit 2024 for a transformative experience with speakers like Aman Gupta and engage in workshops on innovation and entrepreneurship."
     />
     <div className="min-h-screen bg-url('https://i.ibb.co/rdZg1Kr/k.png') text-white overflow-x-hidden">
       <MovingBackground />
