@@ -10,7 +10,6 @@ const Meta = ({
         <Helmet>
             <title>{title}</title>
             <meta name="description" content={description} />
-            <meta name="google-site-verification" content="7_dLpReTQGmE5yQ9eiM21OJX56aD9aEfr_ZikEzbWnM" />
             <meta charset="UTF-8" />
             <meta name="viewport" content={viewport} />
 
