@@ -12,12 +12,16 @@ import Meta from "../components/meta";
 
 import { initiatives, stats } from "../assets/homeData";
 import bg from "../assets/images/bg-homepage.jpg";
+import { useEffect } from "react";
+import { useState } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const HomePage = () => {
   const initiativeRef = useRef(null);
   const containerRef = useRef(null);
+
+  const [bgImageLoaded, setBgImageLoaded] = useState(false);
 
   useLayoutEffect(() => {
     let context = gsap.context(() => {
@@ -37,6 +41,12 @@ const HomePage = () => {
     return () => context.revert();
   }, []);
 
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => setBgImageLoaded(true);
+    img.src = bg;
+  }, []);
+
   return (
     <div>
       <Meta
@@ -49,14 +59,20 @@ const HomePage = () => {
         <main>
           {/* Hero Section */}
           <section
-            className="relative flex items-center bg-cover bg-center"
+            className="relative flex items-center bg-cover bg-center transition-opacity duration-500 bg-[#1a365d]"
             style={{
-              backgroundImage: `url(${bg})`,
+              backgroundImage: bgImageLoaded ? `url(${bg})` : "none",
+              backgroundColor: "#1a365d", // Fallback color matching your theme
               width: "auto",
               height: "90vh",
               maxHeight: "90vh",
             }}
           >
+            {/* Loading skeleton */}
+            {!bgImageLoaded && (
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-dark to-blue-mid animate-pulse" />
+            )}
+
             {/* Hero Container */}
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-32 relative z-10">
               <div className="grid md:grid-cols-1 gap-8 items-center text-center">
