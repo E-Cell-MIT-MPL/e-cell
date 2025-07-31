@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo_lightt from "../pages/ece-removebg-preview.png";
+import logo_light from "../assets/images/ece-removebg-preview.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
@@ -52,7 +52,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <img
-              src={logo_lightt}
+              src={logo_light}
               alt="Logo"
               className="w-12 h-auto cursor-pointer transition-transform duration-300 hover:scale-105 sm:w-16 lg:w-[70px]"
             />

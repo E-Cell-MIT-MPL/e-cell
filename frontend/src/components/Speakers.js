@@ -1,26 +1,26 @@
-"use client"
+"use client";
 
-import velumaniImage from "./velumani.png"
-import ashneerImage from "./ashneer.png"
-import rajShamaniImage from "./raj shamani.png"
-import iqlipseNovaImage from "./iqlipse nova.png"
-import dineshPaiImage from "./dinesh pai.png"
-import deepTech1Image from "./Screenshot 2025-01-31 at 1.57.55 AM.png"
-import deepTech2Image from "./deep tech 2.png"
-import deepTech3Image from "./deep tech 3.png"
-import deepTech4Image from "./deep tech 4.png"
-import infoTech1Image from "./info tech 1.png"
-import infoTech2Image from "./info tech 2.png"
-import infoTech3Image from "./info tech 3.png"
-import infoTech4Image from "./info tech 4.png"
-import infoTech5Image from "./info tech 5.png"
+import velumaniImage from "./velumani.png";
+import ashneerImage from "./ashneer.png";
+import rajShamaniImage from "./raj shamani.png";
+import iqlipseNovaImage from "./iqlipse nova.png";
+import dineshPaiImage from "./dinesh pai.png";
+import deepTech1Image from "./Screenshot 2025-01-31 at 1.57.55 AM.png";
+import deepTech2Image from "./deep tech 2.png";
+import deepTech3Image from "./deep tech 3.png";
+import deepTech4Image from "./deep tech 4.png";
+import infoTech1Image from "./info tech 1.png";
+import infoTech2Image from "./info tech 2.png";
+import infoTech3Image from "./info tech 3.png";
+import infoTech4Image from "./info tech 4.png";
+import infoTech5Image from "./info tech 5.png";
 import infoTech6Image from "./Screenshot 2025-01-30 at 7.55.44 PM.png";
-import facultyImage from "./faculty-24.png"
-import a6Image from "./a6.png"
-import auntyImage from "./aunty.png"
-import chashmaImage from "./chashma.png"
-import ladkiImage from "./ladki.png"
-import abdulImage from "./abdul.png"
+import facultyImage from "./faculty-24.png";
+import a6Image from "../assets/images/IMG_S_S_Gopala_Rathnam.png";
+import auntyImage from "./aunty.png";
+import chashmaImage from "./chashma.png";
+import ladkiImage from "./ladki.png";
+import abdulImage from "./abdul.png";
 
 const keynoteSpeakers = [
   {
@@ -35,13 +35,13 @@ const keynoteSpeakers = [
     type: "Distinguished Speaker",
     image: ashneerImage,
   },
-]
+];
 
 const influencerSpeakers = [
   {
     name: "Raj Shamani",
     role: " Spotify's #1 Podcast",
-    subtitle:"Founder, House of X",
+    subtitle: "Founder, House of X",
     type: "Influencer",
     image: rajShamaniImage,
   },
@@ -51,7 +51,7 @@ const influencerSpeakers = [
     type: "Influencer",
     image: iqlipseNovaImage,
   },
-]
+];
 
 const firesideSpeakers = [
   {
@@ -60,7 +60,7 @@ const firesideSpeakers = [
     type: "Fireside Chat",
     image: dineshPaiImage,
   },
-]
+];
 
 const deeptechSpeakers = [
   {
@@ -84,7 +84,7 @@ const deeptechSpeakers = [
     role: "Founder, Think360.ai",
     image: deepTech4Image,
   },
-]
+];
 
 const infotechSpeakers = [
   {
@@ -103,7 +103,7 @@ const infotechSpeakers = [
     role: "Program Director,MeitY",
     image: infoTech6Image,
   },
-  
+
   {
     name: "Dhwanit Shah",
     role: "Founder, E-Cell MIT",
@@ -119,7 +119,7 @@ const infotechSpeakers = [
     role: "Founder, E-Value Advisors",
     image: infoTech2Image,
   },
-]
+];
 
 const familyBusinessSpeakers = [
   {
@@ -158,7 +158,7 @@ const familyBusinessSpeakers = [
     subtitle: "P.B Abdul Hameed & Sons",
     image: abdulImage,
   },
-]
+];
 
 function SpeakerCard({ speaker, aspectRatio = "aspect-[3/4]" }) {
   return (
@@ -178,15 +178,25 @@ function SpeakerCard({ speaker, aspectRatio = "aspect-[3/4]" }) {
         <div className="absolute inset-0 flex flex-col justify-end p-6 transition-transform duration-500">
           {/* Default State Content */}
           <div className="transform transition-all duration-500 translate-y-0 group-hover:translate-y-[-8px] group-hover:opacity-0">
-            <h3 className="text-white text-lg font-semibold mb-1">{speaker.name}</h3>
+            <h3 className="text-white text-lg font-semibold mb-1">
+              {speaker.name}
+            </h3>
             <p className="text-[#4fd1c5] text-sm">{speaker.role}</p>
           </div>
 
           {/* Hover State Content */}
           <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-[#0a1929] to-[#0a1929]/80 backdrop-blur-sm transform transition-all duration-500 translate-y-full group-hover:translate-y-0">
-            <h3 className="text-white text-lg font-semibold mb-2">{speaker.name}</h3>
-            <p className="text-[#4fd1c5] text-sm mb-2 line-clamp-2">{speaker.role}</p>
-            {speaker.subtitle && <p className="text-[#4fd1c5]/80 text-xs mb-3">{speaker.subtitle}</p>}
+            <h3 className="text-white text-lg font-semibold mb-2">
+              {speaker.name}
+            </h3>
+            <p className="text-[#4fd1c5] text-sm mb-2 line-clamp-2">
+              {speaker.role}
+            </p>
+            {speaker.subtitle && (
+              <p className="text-[#4fd1c5]/80 text-xs mb-3">
+                {speaker.subtitle}
+              </p>
+            )}
             {speaker.type && (
               <span className="inline-block text-[#90cdf4] text-xs px-3 py-1 rounded-full border border-[#90cdf4] bg-[#0a1929]/50 backdrop-blur-sm">
                 {speaker.type}
@@ -200,59 +210,66 @@ function SpeakerCard({ speaker, aspectRatio = "aspect-[3/4]" }) {
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImEiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgcGF0dGVyblRyYW5zZm9ybT0icm90YXRlKDQ1KSI+PHBhdGggZD0iTTAgMGgyMHYyMEgweiIgZmlsbD0ibm9uZSIvPjxjaXJjbGUgY3g9IjAuNSIgY3k9IjAuNSIgcj0iMC41IiBmaWxsPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDUpIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2EpIi8+PC9zdmc+')] opacity-25" />
       </div>
     </div>
-  )
+  );
 }
 
 export function Speakers() {
   return (
     <div className="bg-[#0a1929] min-h-screen">
-  {/* Keynote Speakers Section */}
-   <section className="py-20 px-4">
-    <div className="max-w-4xl mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-[#4fd1c5] mb-16">
-        Keynote Speakers and Influencers' Conclave
-      </h2>
+      {/* Keynote Speakers Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#4fd1c5] mb-16">
+            Keynote Speakers and Influencers' Conclave
+          </h2>
 
-      <div className="mb-12">
-        <h3 className="text-2xl font-semibold text-[#4fd1c5] mb-6 text-center">Keynote Speakers</h3>
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {keynoteSpeakers.map((speaker, index) => (
-            <div className="w-full mx-auto max-w-xs" key={index}>
-              <SpeakerCard speaker={speaker} />
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold text-[#4fd1c5] mb-6 text-center">
+              Keynote Speakers
+            </h3>
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              {keynoteSpeakers.map((speaker, index) => (
+                <div className="w-full mx-auto max-w-xs" key={index}>
+                  <SpeakerCard speaker={speaker} />
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </div>
+          </div>
 
-      <div className="mb-12">
-        <h3 className="text-2xl font-semibold text-[#4fd1c5] mb-6 text-center">Influencers' Conclave</h3>
-        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-          {influencerSpeakers.map((speaker, index) => (
-            <div className="w-full mx-auto max-w-xs" key={index}>
-              <SpeakerCard speaker={speaker} />
+          <div className="mb-12">
+            <h3 className="text-2xl font-semibold text-[#4fd1c5] mb-6 text-center">
+              Influencers' Conclave
+            </h3>
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              {influencerSpeakers.map((speaker, index) => (
+                <div className="w-full mx-auto max-w-xs" key={index}>
+                  <SpeakerCard speaker={speaker} />
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </div>
+          </div>
 
-      <div>
-        <h3 className="text-2xl font-semibold text-[#4fd1c5] mb-6 text-center">Fireside Chat</h3>
-        <div className="max-w-sm mx-auto">
-          {firesideSpeakers.map((speaker, index) => (
-            <div className="w-full mx-auto max-w-xs" key={index}>
-              <SpeakerCard speaker={speaker} />
+          <div>
+            <h3 className="text-2xl font-semibold text-[#4fd1c5] mb-6 text-center">
+              Fireside Chat
+            </h3>
+            <div className="max-w-sm mx-auto">
+              {firesideSpeakers.map((speaker, index) => (
+                <div className="w-full mx-auto max-w-xs" key={index}>
+                  <SpeakerCard speaker={speaker} />
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-
+      </section>
 
       {/* Deeptech Speakers */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#4fd1c5] mb-16">Deeptech Speakers</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#4fd1c5] mb-16">
+            Deeptech Speakers
+          </h2>
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {deeptechSpeakers.slice(0, 2).map((speaker, index) => (
               <div className="max-w-xs w-full mx-auto">
@@ -272,33 +289,37 @@ export function Speakers() {
 
       {/* Infotech Speakers */}
       <section className="py-20 px-4">
-  <div className="max-w-6xl mx-auto">
-    <h2 className="text-3xl md:text-4xl font-bold text-center text-[#4fd1c5] mb-16">Infotech Speakers</h2>
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#4fd1c5] mb-16">
+            Infotech Speakers
+          </h2>
 
-    {/* First row of 3 cards */}
-    <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-      {infotechSpeakers.slice(0, 3).map((speaker, index) => (
-        <div className="max-w-5xl w-full mx-auto">
-          <SpeakerCard key={index} speaker={speaker} />
-        </div>
-      ))}
-    </div>
+          {/* First row of 3 cards */}
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {infotechSpeakers.slice(0, 3).map((speaker, index) => (
+              <div className="max-w-5xl w-full mx-auto">
+                <SpeakerCard key={index} speaker={speaker} />
+              </div>
+            ))}
+          </div>
 
-    {/* Second row of 3 cards */}
-    <div className="mt-8 grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-      {infotechSpeakers.slice(3, 6).map((speaker, index) => (
-        <div className="max-w-4xl w-full mx-auto">
-          <SpeakerCard key={index} speaker={speaker} />
+          {/* Second row of 3 cards */}
+          <div className="mt-8 grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            {infotechSpeakers.slice(3, 6).map((speaker, index) => (
+              <div className="max-w-4xl w-full mx-auto">
+                <SpeakerCard key={index} speaker={speaker} />
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Family Business Speakers */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#4fd1c5] mb-16">Family Business Speakers</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#4fd1c5] mb-16">
+            Family Business Speakers
+          </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {familyBusinessSpeakers.map((speaker, index) => (
               <div className="max-w-xs w-full mx-auto">
