@@ -1,16 +1,17 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import sp1 from './Screenshot 1.png';
-import sp2 from "./Screenshot_2025-01-27_at_11.09.52_PM-removebg-preview.png";
-import sp3 from "./KarMic logo (4).png";
-import sp4 from "./Screenshot_2025-01-28_at_3.12.24_AM-removebg-preview.png";
-import sp5 from "./Acer-logo-digital-green.png";
-import sp6 from "./ICICI_Bank_Logo.png";
-import sp7 from "./Screenshot 2025-01-29 at 11.29.47 PM.png";
-import sp8 from "./Fashion Herald Logo.png";
-import sp9 from "./Yourstory logo (2).png";
-import sp10 from "../assets/images/SponsorSwiggyInstamartLogo.png";
-const sponsors = [sp1, sp2, sp3, sp4, sp9, sp5, sp10, sp6, sp7, sp8]; // List of all sponsor logos
+import { motion } from "framer-motion";
+
+import sp1 from "../assets/mes/Logo_Canara_Bank.png";
+import sp2 from "../assets/mes/Logo_Caprese.png";
+import sp3 from "../assets/mes/KarMic_logo.png";
+import sp4 from "../assets/mes/Logo_Manipal_Technologies.png";
+import sp5 from "../assets/mes/Acer-logo-digital-green.png";
+import sp6 from "../assets/mes/ICICI_Bank_Logo.png";
+import sp7 from "../assets/mes/Logo_KNND_Company.png";
+import sp8 from "../assets/mes/Fashion Herald Logo.png";
+import sp9 from "../assets/mes/Yourstory_logo.png";
+import sp10 from "../assets/mes/SponsorSwiggyInstamartLogo.png";
+
+const sponsors = [sp1, sp2, sp3, sp4, sp9, sp5, sp10, sp6, sp7, sp8];
 
 function Hero() {
   return (
@@ -42,10 +43,15 @@ function Hero() {
           className="space-y-6 text-gray-300"
         >
           <p>
-            Driven by our dedication to entrepreneurial growth, MES aims to transform the campus into a hub of innovation, where students are empowered to become job creators.
+            Driven by our dedication to entrepreneurial growth, MES aims to
+            transform the campus into a hub of innovation, where students are
+            empowered to become job creators.
           </p>
           <p>
-            The summit provides an inspiring platform, connecting ambitious students with successful alumni and industry leaders. It serves as a launchpad for ideas, a hub for networking, and a breeding ground for the next wave of Indian innovators and visionaries.
+            The summit provides an inspiring platform, connecting ambitious
+            students with successful alumni and industry leaders. It serves as a
+            launchpad for ideas, a hub for networking, and a breeding ground for
+            the next wave of Indian innovators and visionaries.
           </p>
         </motion.div>
         <motion.div
@@ -68,32 +74,34 @@ function Hero() {
           <motion.div
             className="flex"
             animate={{
-              x: ['0%', '-100%'],  // Start from 0%, then scroll to -100% (left to right)
+              x: ["0%", "-100%"], // Start from 0%, then scroll to -100% (left to right)
             }}
             transition={{
               x: {
                 repeat: Infinity,
-                repeatType: 'loop',
-                duration: 12000,  // Control the speed here
-                ease: 'linear', // Smooth continuous animation
+                repeatType: "loop",
+                duration: 12000, // Control the speed here
+                ease: "linear", // Smooth continuous animation
               },
             }}
             style={{
-              display: 'flex',
-              minWidth: 'max-content',  // Ensure the container is wide enough for all logos
+              display: "flex",
+              minWidth: "max-content", // Ensure the container is wide enough for all logos
             }}
           >
             {/* Logos */}
             <div className="flex justify-center items-center space-x-12 flex-wrap">
               {/* Render the logos multiple times to ensure an infinite scroll */}
-              {Array(10000).fill().map((_, index) => (
-                <img
-                  key={index}
-                  src={sponsors[index % sponsors.length]} // Repeats logos in cycle
-                  alt={`Sponsor ${index + 1}`}
-                  className="h-16 xs:h-16 object-contain" // Uniform size for all logos
-                />
-              ))}
+              {Array(10000)
+                .fill()
+                .map((_, index) => (
+                  <img
+                    key={index}
+                    src={sponsors[index % sponsors.length]} // Repeats logos in cycle
+                    alt={`Sponsor ${index + 1}`}
+                    className="h-16 xs:h-16 object-contain" // Uniform size for all logos
+                  />
+                ))}
             </div>
           </motion.div>
         </div>

@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import aa from './he.png'; // Ensure this is the correct path to your image
+import React from "react";
+import { motion } from "framer-motion";
+import mesPass from "../assets/mes/IMG_MES_Pass.png";
 
 const Payment = () => {
   return (
@@ -22,7 +22,7 @@ const Payment = () => {
 
         {/* Image Section */}
         <motion.img
-          src={aa}
+          src={mesPass}
           alt="Payment Illustration"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -31,9 +31,12 @@ const Payment = () => {
         />
 
         {/* Pay Now Button */}
-       
 
-        <a href="https://pay.ecellmit.in" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://pay.ecellmit.in"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <motion.button
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
