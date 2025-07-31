@@ -57,7 +57,6 @@ const Events = () => {
               Powered by
               <img
                 className="w-24 md:h-16 font-bold"
-                align-middle
                 src={sp3}
                 alt="Manipal Technologies"
               />

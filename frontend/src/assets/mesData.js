@@ -1,5 +1,27 @@
 import pictureInnovationMela from "../assets/mes/picture_Innovation_Mela.jpg";
 
+import velumaniImage from "../assets/mes/velumani.png";
+import ashneerImage from "../assets/mes/ashneer.png";
+import rajShamaniImage from "../assets/mes/raj shamani.png";
+import iqlipseNovaImage from "../assets/mes/iqlipse nova.png";
+import dineshPaiImage from "../assets/mes/dinesh pai.png";
+import deepTech1Image from "../assets/mes/deep tech 1.png";
+import deepTech2Image from "../assets/mes/deep tech 2.png";
+import deepTech3Image from "../assets/mes/deep tech 3.png";
+import deepTech4Image from "../assets/mes/deep tech 4.png";
+import infoTech1Image from "../assets/mes/info tech 1.png";
+import infoTech2Image from "../assets/mes/info tech 2.png";
+import infoTech3Image from "../assets/mes/info tech 3.png";
+import infoTech4Image from "../assets/mes/info tech 4.png";
+import infoTech5Image from "../assets/mes/info tech 5.png";
+import infoTech6Image from "../assets/mes/info tech 6.png";
+import famBiz1 from "../assets/mes/famBiz_1.png";
+import famBiz2 from "../assets/mes/famBiz_2.png";
+import famBiz3 from "../assets/mes/famBiz_3.png";
+import famBiz4 from "../assets/mes/famBiz_4.png";
+import famBiz5 from "../assets/mes/famBiz_5.png";
+import famBiz6 from "../assets/mes/famBiz_6.png";
+
 export const flagshipEvents = [
   {
     title: "INNOVATION MELA",
@@ -89,3 +111,141 @@ export const CONTACT_INFO = {
     twitter: "#",
   },
 };
+
+export const keynoteSpeakers = [
+  {
+    name: "Dr. Arokiaswamy Velumani",
+    role: "Founder, Thyrocare",
+    type: "Keynote Speaker",
+    image: velumaniImage,
+  },
+  {
+    name: "Ashneer Grover",
+    role: " Co-Founder of BharatPe,Third Unicorn",
+    type: "Distinguished Speaker",
+    image: ashneerImage,
+  },
+];
+
+export const influencerSpeakers = [
+  {
+    name: "Raj Shamani",
+    role: " Spotify's #1 Podcast",
+    subtitle: "Founder, House of X",
+    type: "Influencer",
+    image: rajShamaniImage,
+  },
+  {
+    name: "Iqlipse Nova",
+    role: "Co-founder - BigBrainco, Singer",
+    type: "Influencer",
+    image: iqlipseNovaImage,
+  },
+];
+
+export const firesideSpeakers = [
+  {
+    name: "Dinesh Pai",
+    role: "VicePresident, Zerodha",
+    type: "Fireside Chat",
+    image: dineshPaiImage,
+  },
+];
+
+export const deeptechSpeakers = [
+  {
+    name: "Tushar Bhatnagar",
+    role: "Founder, vidBoard.Ai",
+    subtitle: "AI Powered Futures",
+    image: deepTech1Image,
+  },
+  {
+    name: "Silky Singh",
+    role: "Founder, Finominal",
+    image: deepTech3Image,
+  },
+  {
+    name: "Manoj Sankar",
+    role: "Founder, Nemo.Care",
+    image: deepTech2Image,
+  },
+  {
+    name: "Amit Das",
+    role: "Founder, Think360.ai",
+    image: deepTech4Image,
+  },
+];
+
+export const infotechSpeakers = [
+  {
+    name: "Ishan Sukul",
+    role: "Co-Founder, Kreo",
+    subtitle: "From Hostel Rooms to Board Rooms",
+    image: infoTech1Image,
+  },
+  {
+    name: "Shroat Mehta",
+    role: "Founder's Office, Kreo",
+    image: infoTech5Image,
+  },
+  {
+    name: "Surya Kant",
+    role: "Program Director,MeitY",
+    image: infoTech6Image,
+  },
+
+  {
+    name: "Dhwanit Shah",
+    role: "Founder, E-Cell MIT",
+    image: infoTech4Image,
+  },
+  {
+    name: "Rima Naware",
+    role: "Co-Founder, ZigMe",
+    image: infoTech3Image,
+  },
+  {
+    name: "Ekta Sharma",
+    role: "Founder, E-Value Advisors",
+    image: infoTech2Image,
+  },
+];
+
+export const familyBusinessSpeakers = [
+  {
+    name: "Dr. Sampath Dorairajan",
+    role: "Business Coach",
+    subtitle: "Family-Owned Organizations",
+    image: famBiz1,
+  },
+  {
+    name: "Mr. S S Gopala Rathnam",
+    role: "Chairman-SSG",
+    subtitle: "Insurance Brokers",
+    image: famBiz2,
+  },
+  {
+    name: "Ms. Vathika Pai",
+    role: "Proprietor",
+    subtitle: "Vathika International Travels",
+    image: famBiz3,
+  },
+  {
+    name: "Mr. Vineeth Vij",
+    role: "Head - Sales and Marketing",
+    subtitle: "Suvikar Enterprises and Vinkap Marketing",
+    image: famBiz4,
+  },
+  {
+    name: "Ms. Dhara Bhasin",
+    role: "Founder",
+    subtitle: "Baylink",
+    image: famBiz5,
+  },
+  {
+    name: "Mr. Ahmed Mudassar",
+    role: "Partner",
+    subtitle: "P.B Abdul Hameed & Sons",
+    image: famBiz6,
+  },
+];
